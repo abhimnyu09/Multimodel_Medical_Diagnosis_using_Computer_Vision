@@ -12,7 +12,7 @@ This project presents a proof-of-concept multimodal diagnostic system that assis
 ## Demo
 
 ### Web Interface
-![Web Interface](images/web-interface.png)
+![Web Interface](images/demo.jpg)
 
 ### Upload and Analysis
 ![Upload Process](images/upload-demo.png)
