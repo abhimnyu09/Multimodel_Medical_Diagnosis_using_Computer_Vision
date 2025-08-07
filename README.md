@@ -15,10 +15,10 @@ This project presents a proof-of-concept multimodal diagnostic system that assis
 ![Web Interface](images/demo.jpg)
 
 ### Upload and Analysis
-![Upload Process](images/upload-demo.png)
+![Upload Process](images/demo2.jpg)
 
 ### Results and Recommendations
-![Results Page](images/results-example.png)
+![Results Page](images/demo3.jpg)
 
 ## System Architecture
 
