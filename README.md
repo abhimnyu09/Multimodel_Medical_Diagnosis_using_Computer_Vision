@@ -70,8 +70,8 @@ Follow these steps to set up and run the project locally.
 ### 2. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/multimodal-derm-project.git
-cd multimodal-derm-project
+git clone https://github.com/abhimnyu09/Multimodel_Medical_Diagnosis_using_Computer_Vision.git
+cd Multimodel_Medical_Diagnosis_using_Computer_Vision
 ```
 
 ### 3. Set Up Virtual Environment
