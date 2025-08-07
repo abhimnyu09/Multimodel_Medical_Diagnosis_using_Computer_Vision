@@ -170,10 +170,6 @@ Once it's running, open your web browser and go to `http://127.0.0.1:5000` to us
 └── README.md
 ```
 
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
 ## Acknowledgments
 
 - This project uses the HAM10000 dataset, collected by the University of Queensland and the Medical University of Vienna.
