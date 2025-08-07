@@ -11,7 +11,14 @@ This project presents a proof-of-concept multimodal diagnostic system that assis
 
 ## Demo
 
-> **Note**: It is highly recommended to add a screenshot of your running web application here. It makes the project much more engaging.
+### Web Interface
+![Web Interface](images/web-interface.png)
+
+### Upload and Analysis
+![Upload Process](images/upload-demo.png)
+
+### Results and Recommendations
+![Results Page](images/results-example.png)
 
 ## System Architecture
 
