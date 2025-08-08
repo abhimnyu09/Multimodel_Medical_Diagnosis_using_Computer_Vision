@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DermDetect AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        .container { max-width: 700px; }
+        .card { margin-top: 2rem; }
+        .loader { border: 8px solid #f3f3f3; border-radius: 50%; border-top: 8px solid #3498db; width: 60px; height: 60px; animation: spin 2s linear infinite; display: none; margin: 20px auto; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-center mt-4">
+            <h2>DermDetect AI</h2>
+            <p class="lead">Multimodal Diagnosis for Skin Conditions</p>
+            <p><small>Disclaimer: This is an educational AI prototype and not a substitute for professional medical advice.</small></p>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <form id="prediction-form" action="/predict" method="post" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="image" class="form-label">1. Upload Skin Lesion Image</label>
+                        <input class="form-control" type="file" id="image" name="image" accept="image/*" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="symptoms" class="form-label">2. Describe Your Symptoms</label>
+                        <textarea class="form-control" id="symptoms" name="symptoms" rows="3" placeholder="e.g., 'A new mole, it's been itchy for a week and seems to have grown.'" required></textarea>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Get Analysis</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="loader" class="loader"></div>
+
+        <div id="result" class="mt-4" style="display:none;">
+            <h4>Analysis Result</h4>
+            <div class="alert alert-info">
+                <p><strong>Predicted Condition:</strong> <span id="predicted-class"></span></p>
+                <p><strong>Confidence:</strong> <span id="confidence"></span></p>
+                <hr>
+                <p><strong>AI-Generated Information & Recommendations:</strong></p>
+                <p id="recommendation"></p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.getElementById('prediction-form').addEventListener('submit', function() {
+            document.getElementById('loader').style.display = 'block';
+            document.getElementById('result').style.display = 'none';
+        });
+    </script>
+</body>
+</html>
